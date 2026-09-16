@@ -39,6 +39,7 @@ from sorts.selection_sort import selection_sort
 from sorts.shell_sort import shell_sort
 from sorts.stooge_sort import stooge_sort
 from sorts.strand_sort import strand_sort
+from sorts.tree_sort import tree_sort
 
 
 def test_heap_sort() -> None:
@@ -70,6 +71,7 @@ SORTS = (
     shell_sort,
     stooge_sort,
     strand_sort,
+    tree_sort,
 )
 
 
@@ -122,6 +124,7 @@ def test_sort_matches_builtin(sort, case) -> None:
         insertion_sort,
         merge_sort,
         selection_sort,
+        tree_sort,
     ],
     ids=lambda f: f.__name__,
 )
