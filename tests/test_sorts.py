@@ -35,6 +35,7 @@ from sorts.merge_sort import merge_sort
 from sorts.odd_even_sort import odd_even_sort
 from sorts.patience_sort import patience_sort
 from sorts.quick_sort import quick_sort
+from sorts.quick_sort_3_partition import three_way_radix_quicksort
 from sorts.selection_sort import selection_sort
 from sorts.shell_sort import shell_sort
 from sorts.stooge_sort import stooge_sort
@@ -70,6 +71,7 @@ SORTS = (
     shell_sort,
     stooge_sort,
     strand_sort,
+    three_way_radix_quicksort,
 )
 
 
@@ -122,6 +124,7 @@ def test_sort_matches_builtin(sort, case) -> None:
         insertion_sort,
         merge_sort,
         selection_sort,
+        three_way_radix_quicksort,
     ],
     ids=lambda f: f.__name__,
 )
