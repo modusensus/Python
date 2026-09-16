@@ -30,6 +30,7 @@ from sorts.exchange_sort import exchange_sort
 from sorts.gnome_sort import gnome_sort
 from sorts.heap_sort import heap_sort
 from sorts.insertion_sort import insertion_sort
+from sorts.intro_sort import sort
 from sorts.iterative_merge_sort import iter_merge_sort
 from sorts.merge_sort import merge_sort
 from sorts.odd_even_sort import odd_even_sort
@@ -68,6 +69,7 @@ SORTS = (
     quick_sort,
     selection_sort,
     shell_sort,
+    sort,
     stooge_sort,
     strand_sort,
 )
@@ -122,6 +124,7 @@ def test_sort_matches_builtin(sort, case) -> None:
         insertion_sort,
         merge_sort,
         selection_sort,
+        sort,
     ],
     ids=lambda f: f.__name__,
 )
