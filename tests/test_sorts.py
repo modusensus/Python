@@ -31,6 +31,7 @@ from sorts.gnome_sort import gnome_sort
 from sorts.heap_sort import heap_sort
 from sorts.insertion_sort import insertion_sort
 from sorts.iterative_merge_sort import iter_merge_sort
+from sorts.merge_insertion_sort import merge_insertion_sort
 from sorts.merge_sort import merge_sort
 from sorts.odd_even_sort import odd_even_sort
 from sorts.pancake_sort import pancake_sort
@@ -64,6 +65,7 @@ SORTS = (
     heap_sort,
     insertion_sort,
     iter_merge_sort,
+    merge_insertion_sort,
     merge_sort,
     odd_even_sort,
     pancake_sort,
@@ -125,6 +127,7 @@ def test_sort_matches_builtin(sort, case) -> None:
         exchange_sort,
         gnome_sort,
         insertion_sort,
+        merge_insertion_sort,
         merge_sort,
         pancake_sort,
         selection_sort,
